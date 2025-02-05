@@ -1,0 +1,19 @@
+# 创建项目
+pnpm create vite pony-knowledge-base --template react-ts
+
+cd pony-knowledge-base
+
+# 安装必要的依赖
+pnpm add react-router-dom @heroicons/react @headlessui/react
+pnpm add -D tailwindcss postcss autoprefixer
+pnpm add dayjs axios @types/node
+pnpm add react-markdown
+pnpm add @tailwindcss/typography
+
+# 先全局安装 tailwindcss
+pnpm add -g tailwindcss
+
+# 然后在项目中初始化
+pnpm dlx tailwindcss init -p 
+
+pnpm dev 
